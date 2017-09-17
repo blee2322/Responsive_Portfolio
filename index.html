@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- This code is being written in html -->
+<html lang="en-us">
+<!-- The lines within the <head> tag are setting the parameters for the page and where the .css file is sourced -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>About | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- This is the top of the webpage with 2 containers: one with a header tag and id of "mashead"; and within "masthead" there is a div tag with a class "container". 
+
+  If I wanted to change the elements of <a>Your Name<a/> independently of <div class= "container">, would I create another <div> so that any changes I make do not effect <div class= container>, if I chose not to modify the <a> tag? If I did modify any styling on the <a> tag, it would effect all <a> on the page....right?-->
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Your Name</a>
+  <!-- This <nav> tag is contained under <div class= "container" it contains 3 links with references to the other pages in the local folder. 
+
+  Im still confused about when to use classes and when to use id's and why does the nav tag not have a class or id? Is it because navigation bars are one time use elements? -->
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  <!-- /end of navigation bar -->
+    </div>
+  <!-- /end of class= "container" -->
+  </header>
+  <!-- end of id= "masthead" -->
+  <!--/this is the end of the top of the page________________________________-->
+
+  <!--<div id="main-container"> and <div class="container"> houses <section class="main-section"> and <section class="sidebar"> -->
+
+  <div id="main-container" class="container">
+  <!-- <section class "mainsection"> contains About Me portion of the webpage and it houses the image and text -->
+    <section class="main-section">
+      <h1>About Me</h1>
+
+      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
+      <p>Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
+
+      <p>Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.</p>
+
+    </section>
+  <!-- /end of <section class="main section"> -->
+
+  <!-- <section class="sidebar"> houses <div id="connect">. <div =id"connect"> houses Connect with Me portion of the page and contains the social media icons. Why is there a need for the <div id="connect"> line of code, it does not receive any attributes in the css? And when it is removed it doesnt effect the page overall layout of the page.-->
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+  <!-- These are the icons that are referenced in the assets folder -->
+        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+  <!--/ of <div id "connect" -->
+    </section>
+  <!-- /end of <section class="sidebar"> -->
+  </div>
+  <!-- /end of <div id="main-container" class="container"> -->
+
+  <!--<footer> houses <div class="container"> -->
+  <footer>
+  <!--<div class="container"> houses the copyright text in the footer-->
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
+  <!--/end of footer-->
+</body>
+
+</html>
