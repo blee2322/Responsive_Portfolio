@@ -312,7 +312,7 @@ p{
   border: 1px solid #ddd;
 }
 .work {
-  /*position: relative;*/
+  position: relative;
   float: left;
   width: 46%;
   margin: 20px 0 25px;
@@ -326,4 +326,69 @@ p{
 }
 @media screen and (max-width:640px){
 
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
+#masthead {
+  position: static;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+#logo {
+  float: left;
+  width: 100%;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  /*text-decoration: none;*/
+  background: #4aaaa5;
+  text-align: center;
+  background-size:100%;
+}
+.main-section img{
+  width: 100%;
+}
+.work {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+/*The nav tag is set to float right and has a 
+margin on the top 25px from the top of class="container".*/
+nav {
+  float: right;
+  margin-top: 25px;
+  width:100%;
+  text-align: center;
+}
+
+nav a {
+  display: inline-black;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+  text-align: center;
+
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
